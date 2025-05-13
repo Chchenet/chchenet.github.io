@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SEAT - Сервисное обслуживание</title> 
+    <link rel="stylesheet" href="styles/tech.css"> 
+</head> 
+<body> <!-- Навигационная панель --> 
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">SEAT</a>
+        </div>
+        <div class="nav-links">
+            <a href="tech.html">Сервис</a> 
+            <a href="about.html">О нас</a> 
+            <a href="catalog.html">Каталог</a> 
+        </div>
+    </div>
+<!-- Секция сервисного обслуживания -->
+<section class="service-main">        
+    <div class="service-content">
+        <h1>Сервисное<br>обслуживание</h1>           
+        <ul class="service-list">                
+            <li>Профессиональный ремонт</li>
+            <li>своевременная диагностика</li>
+            <li>регулярное сезонное обслуживание</li>            
+        </ul>
+        <a href="#" class="btn">Запись</a>
+    </div>
+    <div class="service-image">
+        <img src="img/IMG_4827 1.png" alt="Сервисное обслуживание SEAT">
+    </div>
+</section>
+
+<!-- Секция технического обслуживания -->
+<section class="tech-service">
+    <h2>Техническое<br>обслуживание</h2>
+    <div class="tech-image">
+        <img src="img/pngwing.com-11.png" alt="Техническое обслуживание">
+    </div>
+</section>
+
+<!-- Секция услуг -->
+<div class="services-grid">
+    <section class="body-service">
+        <h2>Кузовной<br>ремонт</h2>
+        <div class="body-image">
+            <img src="img/pngwing.com-10 1.png" alt="Кузовной ремонт">
+        </div>
+    </section>
+    <section class="diagnostics">
+        <h2>Диагностика<br>авто</h2>
+        <div class="diagnostics-image">
+            <img src="img/pngwing.com-12.png" alt="Диагностика авто">
+        </div>
+    </section>
+    <section class="appointment">
+        <h2>Записаться</h2>
+        <form class="appointment-form">
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="+7 999 999 99 99">
+            </div>
+            <div class="form-group">
+                <label for="model">Марка/модель</label>
+                <input type="text" id="model" placeholder="SEAT IBIZA">
+            </div>
+            <div class="form-group">
+                <label>Виды работ</label>
+                <div class="service-types">
+                    <button type="button" class="service-type">Техническое обслуживание</button>
+                    <button type="button" class="service-type">Диагностика авто</button>
+                    <button type="button" class="service-type">Кузовной ремонт</button>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Записаться</button>
+        </form>
+    </section>
+</div>
+
+<!-- Футер -->
+<footer>
+    <div class="footer-logo">
+        SEAT RUSSIA
+        <p class="copyright">© VAG GROUP RUS</p>
+    </div>
+    <div class="footer-contact">+7 800 000 11 22</div>
+</footer>
+</body>
+</html>
