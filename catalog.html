@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SEAT - Каталог автомобилей</title> 
+    <link rel="stylesheet" href="styles/catalog.css"> 
+</head> 
+<body> 
+    <!-- Хедер с навигацией --> 
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">SEAT</a>
+        </div>
+        <div class="nav-links">
+            <a href="tech.html">Сервис</a> 
+            <a href="about.html">О нас</a> 
+            <a href="catalog.html">Каталог</a> 
+        </div>
+    </div>
+    </div>
+    <main class="main-content">
+        <div class="filters-container">
+            <div class="filters-header">ФИЛЬТРЫ</div>
+            <div class="filter-section">
+                <div class="filter-label">Цена</div> 
+                <div class="price-range">500.000 - 1.000.000</div>
+            </div>
+            <div class="filter-section"> 
+                <div class="filter-label">КПП</div>
+                <div class="button-group">
+                    <div class="filter-button active">АКПП</div>
+                    <div class="filter-button">МКПП</div>
+                    <div class="filter-button">РКПП</div> 
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-label">Двигатель</div>
+                 <div class="button-group">
+                    <div class="filter-button active">Дизель</div> 
+                    <div class="filter-button">Бензин</div>
+                    <div class="filter-button">Гибрид</div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-label">Состояние</div>
+                <div class="button-group">
+                    <div class="filter-button active">Новый</div> 
+                    <div class="filter-button">Б/У</div> 
+                </div> 
+            </div>
+            <div class="filter-section">
+                <div class="filter-label">Привод</div>
+                <div class="button-group">
+                    <div class="filter-button active">Передний</div>
+                    <div class="filter-button">Задний</div> 
+                    <div class="filter-button">Полный</div>
+                </div>
+            </div>
+        </div>
+        <section class="catalog">
+            <div class="catalog-grid">
+                <!-- Автомобиль 1 -->
+                <div class="card">
+                    <img src="img/seat-ibiza-two-columns-xl-2560x1320.jpg" alt="Car Image" class="car-image">
+                    <div class="card-details">
+                        <h2 class="price">$15,000</h2>
+                        <p class="car-info">1.6/200 л.с./бензин</p>
+                        <p class="car-info">Робот</p>
+                        <p class="car-info">Хэтчбек 5 д</p>
+                        <button class="contact-button">Связаться</button>
+                    </div>
+                </div>
+            <!-- Автомобиль 2 -->
+                <div class="card">
+                      <img src="img/seat-ibiza-two-columns-xl-2560x1320.jpg" alt="Car Image" class="car-image">
+                      <div class="card-details">
+                         <h2 class="price">$15,000</h2>
+                         <p class="car-info">1.6/200 л.с./бензин</p>
+                            <p class="car-info">Робот</p>
+                            <p class="car-info">Хэтчбек 5 д</p>
+                           <button class="contact-button">Связаться</button>
+                       </div>
+                  </div>
+            <!-- Автомобиль 3 -->
+                <div class="card">
+                      <img src="img/seat-ibiza-two-columns-xl-2560x1320.jpg" alt="Car Image" class="car-image">
+                      <div class="card-details">
+                         <h2 class="price">$15,000</h2>
+                         <p class="car-info">1.6/200 л.с./бензин</p>
+                            <p class="car-info">Робот</p>
+                            <p class="car-info">Хэтчбек 5 д</p>
+                           <button class="contact-button">Связаться</button>
+                       </div>
+                  </div>
+            <!-- Автомобиль 4 -->
+                <div class="card">
+                      <img src="img/seat-ibiza-two-columns-xl-2560x1320.jpg" alt="Car Image" class="car-image">
+                      <div class="card-details">
+                         <h2 class="price">$15,000</h2>
+                         <p class="car-info">1.6/200 л.с./бензин</p>
+                            <p class="car-info">Робот</p>
+                            <p class="car-info">Хэтчбек 5 д</p>
+                           <button class="contact-button">Связаться</button>
+                       </div>
+                  </div>
+            <!-- Автомобиль 5 -->
+            <!-- Автомобиль 6 --><div class="car-card">
+                <div class="card">
+                      <img src="img/seat-ibiza-two-columns-xl-2560x1320.jpg" alt="Car Image" class="car-image">
+                      <div class="card-details">
+                         <h2 class="price">$15,000</h2>
+                         <p class="car-info">1.6/200 л.с./бензин</p>
+                            <p class="car-info">Робот</p>
+                            <p class="car-info">Хэтчбек 5 д</p>
+                           <button class="contact-button">Связаться</button>
+                       </div>
+                  </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-logo">SEAT RUSSIA</div>
+            <div class="footer-copyright">© VAG GROUP RUS</div>
+            <div class="footer-contact">+7 800 000 11 22</div>
+        </footer>
+    </body>
+    <script>
+        document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', function() {
+            const siblings = this.parentNode.querySelectorAll('.filter-button');
+            siblings.forEach(sibling => {
+                sibling.classList.remove('active');
+        });
+            this.classList.add('active');});
+        });
+</script>
+</html>
