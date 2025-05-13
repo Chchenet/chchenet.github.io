@@ -1,0 +1,251 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    background-color: transparent;
+    color: white;
+    padding: 28px 64px;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: white;
+    color: #333; 
+}
+
+/* Навигационная панель */ 
+.navbar { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #636469;
+    color: white;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    transition: opacity 0.3s ease;
+}
+.nav-links a:hover {
+    opacity: 0.8; 
+}
+
+/* Секция истории моделей */ 
+.hero-section {
+    height: auto;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: flex-end;
+}
+.hero-image-container img {
+    position: relative;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+}
+.hero-content {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.hero-text p{
+    font-size: 28px;
+    z-index: 2;
+    color: white;
+    padding-left: 60px;
+    margin-top: 0px;
+}
+
+.hero-text h2{
+    font-size: 36px;
+    z-index: 2;
+    color: white;
+    padding-left: 60px;
+    margin-bottom: 5px;
+}
+
+.hero-button {
+    font-size: 18px;
+    margin-bottom: 65px;
+    z-index: 2;
+    padding-right: 60px;
+}
+
+/* Секция SEAT IBIZA */
+.ibiza-section {
+    position: relative;
+    background-color: #eee;
+    height: 100%;
+    overflow: hidden;
+}
+.ibiza-title {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+}
+.ibiza-image-container {
+    height: 100%;
+}
+.ibiza-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Секция Cupra и характеристики */ 
+.features-section {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+
+.cupra-image {
+    width: 500px;
+    height: 700px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.features-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.feature-item {
+    padding: 0 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+}
+
+/* Секция сервисного обслуживания */
+.service-section {
+    display: flex;
+    background-color: #555;
+    color: white;
+    padding: 30px;
+}
+.service-info {
+    flex: 1;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.service-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.service-list {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.service-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.service-list li::before {
+    content: "•"; 
+    position: absolute;
+    left: 0;
+}
+.service-image {
+    flex: 1;
+}
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-tech{
+    background-color: transparent;
+    color: white;
+    padding: 14px 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-tech:hover {
+    background-color: white;
+    color: #333; 
+}
+
+/* Футер */ 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333;
+    color: white;
+}
+.footer-logo {
+    font-weight: bold;
+}
+.copyright {
+    font-size: 12px;
+    opacity: 0.7;
+}
+.footer-contact {
+    font-size: 18px; 
+}
+
+/* Адаптивность */ 
+@media (max-width: 768px) {
+    .hero-text {
+        left: 20px;
+        bottom: 20px;
+    }
+    .features-section,
+    .service-section {\n flex-direction: column;
+    }
+    .cupra-image-container,
+    .service-info {
+        padding-right: 0;
+        margin-bottom: 20px;\n }
+        .footer {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+    }
