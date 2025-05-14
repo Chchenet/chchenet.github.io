@@ -1,0 +1,5 @@
+# Сгенерировано https://pr-cy.ru/
+
+Sitemap: https://chchenet.github.io/sitemap.xml
+User-agent: *
+Allow: https://chchenet.github.io/
